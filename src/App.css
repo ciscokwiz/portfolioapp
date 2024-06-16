@@ -1,8 +1,150 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&family=Montserrat:wght@300&display=swap');
 
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(24, 26, 27);
 
 }
 
+body{
+  font-family: "sans-serif", "Poppins";
+  font-weight: 300;
+  font-size: 16px;
+  text-decoration: none;
+
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 40px 25px 50px;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.logo{
+  color: #2d2e32;
+  cursor: pointer;
+}
+h3{
+  color: rgb(202, 197, 190);
+  display: block;
+  font-size: 1.17em;
+  font-weight: 600;
+
+}
+nav ul{
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  list-style-image: initial;
+}
+nav li a{
+  text-decoration: none;
+  color: rgb(227, 223, 216);
+  font-weight: 600;
+
+}
+.hero{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+}
+.container{
+  margin: 0 auto;
+  max-width: 107rem;
+  padding: 0 4rem;
+  display: block;
+}
+.content{
+  align-items: center;
+  display: flex;
+  gap: 10rem;
+  height: 55rem;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
 }
 
+.hero-main{
+  align-items: center;
+  display: flex;
+  gap: 10rem;
+  justify-content: center;
+  position: relative;
+}
+.hero-text h1{
+  line-height: 1.2;
+  font-size: 5.5rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+
+}
+.hero-text p{
+  font-family: sans-serif;
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 1.3;
+  margin-bottom: 3rem;
+}
+
+.hero-text span{
+  justify-content: center;
+  margin-bottom: 4rem;
+  margin-top: -2rem;
+}
+.herotext-img{
+  height: 3rem;
+}
+.imgg{
+  height: 30rem;
+  width: 25rem;
+  position: relative;
+  border: solid 3px rgb(36, 226, 226);
+
+  animation: float 8s ease-in-out infinite;
+}
+@keyframes float {
+  0%{
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50%{
+      border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100%{
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+.skills{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: static;
+}
+.skills p{
+  font-size: 1.5rem;
+  font-weight: 350;
+  border-bottom: 2px solid rgba(45,46,50,.5);
+  padding-bottom: 0.5rem
+}
+
+.skills ul{
+  gap: 3em;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+
+}
+.logos{
+  display: block;
+  
+}
+.skills ul li{
+  cursor: pointer;
 }
